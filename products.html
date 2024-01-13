@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munevver Keles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="container">
+        <div class="menuler">
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="#" id="loginBtn">Login</a></li>
+        </ul>
+    </div>
+    <div class="mobil-menu">
+      <div class="menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="#" id="loginBtn_mobil">Login</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+</header>
+<body>
+        <div class="container">
+            <h1 class="title section">Products</h1>
+            <section class="product detail">
+                <div class="filter">
+                    <select id="categorySelect">
+                        <option value="all">All</option>
+                        <option value="tshirt">Tshirt</option>
+                        <option value="sweat">Sweat</option>
+                        <option value="pants">Pants</option>
+                      </select>
+                      <button class="filter_button" onclick="showSelectedCategory()">Filter</button>
+                </div>
+                <div class="products">
+                    <div id="tshirt" class="category">
+                            <div class="columns">
+                                <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/tshirt-1.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">White Sweat</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/tshirt-2.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Black Sweat</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/tshirt-3.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Red Sweat</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <div id="sweat" class="category">
+                            <div class="columns">
+                                <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/sweat-1.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">White Tshirt</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/sweat-2.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Black Tshirt</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/sweat-3.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Red Tshirt</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <div id="pants" class="category">
+                            <div class="columns">
+                                <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/pants-1.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">White Pants</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/pants-2.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Black Pants</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="column is-4">
+                                    <div class="card penguin-card-border">
+                                      <div class="card-image">
+                                        <img src="img/pants-3.jpeg" class="penguin-card-img" alt="..." />
+                                      </div>
+                                      <div class="card-content">
+                                        <p class="title is-5">Red Pants</p>
+                                        <p class="content">Stylish yellow coat for young and beautiful ladies.</p>
+                                        <div class="content">
+                                          <h3 class="price-text-style">200 TL</h3>
+                                        </div>
+                                        <a type="button" href="product_detail.html" class="button is-primary">
+                                            <i class="fa fa-shopping-cart"></i> BUY NOW
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                </div>
+                </div>
+            </section>
+        </div>
+      </footer>
+      <div class="popup" id="loginPopup">
+      <div class="popup-container" >
+        <div class="close-btn" onclick="closePopup('loginPopup')">X</div>
+        <h2>Login Form</h2>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Sign Up</a></p>
+        </form>
+    </div>
+  </div>
+    <div class="popup" id="registerPopup">
+    <div class="popup-container">
+        <div class="close-btn" onclick="closePopup('registerPopup')">X</div>
+        <h2>Register Form</h2>
+        <form>
+
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

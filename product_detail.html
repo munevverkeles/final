@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munevver Keles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="container">
+        <div class="menuler">
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="#" id="loginBtn_mobil">Login</a></li>
+        </ul>
+    </div>
+    <div class="mobil-menu">
+      <div class="menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="#" id="loginBtn">Login</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+</header>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="big_img">
+                    <img id="bigImage" src="img/tshirt-1.jpeg" alt="">
+                </div>
+                <div class="small_imgs" onclick="changeBigImage(event)">
+                    <img src="img/pants-1.jpeg" alt="">
+                    <img src="img/sweat-1.jpeg" alt="">
+                    <img src="img/tshirt-2.jpeg" alt="">
+                </div>
+            </div>
+        
+            <div class="column">
+                <h1 class="title">White 100% Cotton Basic Crew Neck Knit T-Shirt</h1>
+                <h3 class="price">157 TL</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-header" onclick="toggleAccordion('section1')">Description</div>
+                      <div id="section1" class="accordion-content open">• This product will be shipped by MuButik. • More than 100 units are available for sale at the campaign price. • Our products will be sent with MuButik tags. • A maximum of 10 pieces can be ordered for this product. MuButik reserves the right to cancel orders exceeding 10 pieces. This limit does not apply to corporate orders, and different limits may be set for corporate orders. • Free return within 15 days. • 100% Cotton, Knit Fabric • Basic Fit: Our basic fit, which fits the body perfectly and is suitable for both casual and classic styles, is a must-have in everyone's wardrobe.</div>
+                    </div>
+                
+                    <div class="accordion-item">
+                      <div class="accordion-header" onclick="toggleAccordion('section2')">Size Chart</div>
+                      <div id="section2" class="accordion-content">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Size</th>
+                                <th>Height</th>
+                                <th>Chest</th>
+                                <th>Waist</th>
+                                <th>Hip</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Small</td>
+                                <td>165 cm</td>
+                                <td>90 cm</td>
+                                <td>72 cm</td>
+                                <td>95 cm</td>
+                              </tr>
+                              <tr>
+                                <td>Medium</td>
+                                <td>170 cm</td>
+                                <td>95 cm</td>
+                                <td>78 cm</td>
+                                <td>100 cm</td>
+                              </tr>
+                              <tr>
+                                <td>Large</td>
+                                <td>175 cm</td>
+                                <td>100 cm</td>
+                                <td>84 cm</td>
+                                <td>105 cm</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <p class="size">Select Size:</p>
+                    <select id="sizeSelect" onchange="showSizeChart()">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <button class="buy_button">BUY</button>
+            </div>
+        </div>
+    </div>
+</section>
+</footer>
+<div class="popup" id="loginPopup">
+<div class="popup-container" >
+  <div class="close-btn" onclick="closePopup('loginPopup')">X</div>
+  <h2>Login Form</h2>
+  <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Sign Up</a></p>
+  </form>
+</div>
+</div>
+<div class="popup" id="registerPopup">
+<div class="popup-container">
+  <div class="close-btn" onclick="closePopup('registerPopup')">X</div>
+  <h2>Register Form</h2>
+  <form>
+
+      <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button type="submit">Register</button>
+  </form>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
